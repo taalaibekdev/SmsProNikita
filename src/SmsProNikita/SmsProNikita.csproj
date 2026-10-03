@@ -10,7 +10,7 @@
   <PropertyGroup>
     <!-- NuGet metadata -->
     <PackageId>SmsProNikita</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>taalaibekdev</Authors>
     <Description>DI-клиент для XML-протокола SMS-шлюза smspro.nikita.kg (отправка SMS, отчёты о доставке, инфо об абоненте, баланс счёта).</Description>
     <PackageTags>sms;smspro;nikita;kyrgyzstan;gateway;xml</PackageTags>
