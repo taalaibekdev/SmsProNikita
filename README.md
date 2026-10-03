@@ -1,7 +1,5 @@
 # SmsProNikita
 
-[![CI](https://github.com/taalaibekdev/SmsProNikita/actions/workflows/ci.yml/badge.svg)](https://github.com/taalaibekdev/SmsProNikita/actions/workflows/ci.yml)
-
 DI-клиент .NET 10 (C#) для XML-протокола SMS-шлюза **smspro.nikita.kg**:
 
 - отправка SMS (`POST /api/message`);
