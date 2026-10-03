@@ -287,13 +287,6 @@ tests/SmsProNikita.Tests  тесты xUnit.net v3
 (`EnforceCodeStyleInBuild`), предупреждения считаются ошибками (`TreatWarningsAsErrors`),
 SourceLink и символьный пакет включены.
 
-## Публикация пакета
-
-```bash
-dotnet pack src/SmsProNikita/SmsProNikita.csproj -c Release -o artifacts
-dotnet nuget push artifacts/SmsProNikita.1.0.0.nupkg --api-key <NUGET_API_KEY> --source https://api.nuget.org/v3/index.json
-```
-
 ## Лицензия
 
 MIT
