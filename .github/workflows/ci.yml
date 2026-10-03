@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore SmsProNikita.slnx
+
+      - name: Build
+        run: dotnet build SmsProNikita.slnx --no-restore -c Release
+
+      - name: Test
+        run: dotnet test SmsProNikita.slnx --no-build -c Release
+
+      - name: Pack
+        run: dotnet pack src/SmsProNikita/SmsProNikita.csproj -c Release --no-build -o artifacts
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: nupkg
+          path: artifacts/*

@@ -1,0 +1,15 @@
+# Нормализация переводов строк: в репозитории LF, в рабочей копии — как настроено у пользователя.
+* text=auto
+
+*.cs       text diff=csharp
+*.csproj   text
+*.props    text
+*.slnx     text
+*.json     text
+*.yml      text
+*.md       text
+*.editorconfig text
+
+*.png      binary
+*.snupkg   binary
+*.nupkg    binary

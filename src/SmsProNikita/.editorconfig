@@ -1,0 +1,5 @@
+# Правила для библиотеки: строгие требования к публичному API и асинхронности.
+# Для приложений (samples) и тестов эти правила не применяются.
+[*.cs]
+dotnet_diagnostic.CA1062.severity = warning   # проверять аргументы публичных методов
+dotnet_diagnostic.CA2007.severity = warning   # ConfigureAwait(false) в библиотечном коде
